@@ -20,7 +20,12 @@ form.addEventListener('submit', (e) => {
 
         media = soma / 5;
 
+        if (media >= 70) {
+            resp.textContent = "Aprovado"
+        } else {
+            resp.textContent = "Reprovado"
+
+        }
         vetorresp2.textContent = vetor;
-        resp.textContent = media;
         
 })
